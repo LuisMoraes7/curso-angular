@@ -1,0 +1,9 @@
+#typeselector{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+form#form{
+    background-color: aqua;
+}

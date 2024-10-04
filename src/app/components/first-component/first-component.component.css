@@ -1,0 +1,9 @@
+h1{
+    color: blue;
+    border-bottom: 1px solid black;
+    width: 25ch;
+}
+
+.custom-text{
+    background-color: rgb(0, 136, 255);
+}

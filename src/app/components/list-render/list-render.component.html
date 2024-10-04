@@ -1,0 +1,28 @@
+<div class="class">
+    Deu certo
+    <h2>Animais</h2>
+    <form id="form">
+        <fieldset>
+            <input type="text" [(ngModel)]="animal_name" name="name" placeholder="Nome do animal: ">
+                <ul>
+                    <li id="typeselector" *ngFor="let tipo of typeList">
+                        <label for="{{tipo}}">{{tipo}}:</label> 
+                        <input type="radio" [(ngModel)]="type" name="animal" id="{{tipo}}" value="{{tipo}}">
+                    </li>
+                </ul>
+            <input type="number" [(ngModel)]="age" name="age" id="age">
+            <input type="submit" value="Enviar" (click)="recebe(animal_name, type, age)">
+        </fieldset>
+        <br>
+        <br>
+    </form>
+    <ul>
+        <li *ngFor="let animal of animals">
+            {{animal.name}} - {{animal.type}}
+            <button (click)="showAge(animal)">Show age</button>
+            <button (click)="removeAnimal(animal)">Excluir</button>
+        </li>
+    </ul>
+    <h3>{{animalDetails}}</h3>
+</div>
+
