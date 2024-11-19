@@ -18,11 +18,12 @@
     </form>
     <ul>
         <li *ngFor="let animal of animals">
-            {{animal.name}} - {{animal.type}}
+            <a routerLink="/list/{{animal.id}}">{{animal.name}}</a> - {{animal.type}}
             <button (click)="showAge(animal)">Show age</button>
             <button (click)="removeAnimal(animal)">Excluir</button>
         </li>
     </ul>
     <h3>{{animalDetails}}</h3>
+    <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">First component</a>
 </div>
 

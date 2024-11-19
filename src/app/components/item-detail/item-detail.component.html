@@ -1,0 +1,14 @@
+<div *ngIf="animal; else localstorage" class="class">
+    <p>ID: {{animal.id}}</p>
+    <p>Nome: {{animal.name}}</p>
+</div>
+<ng-template #localstorage class="class">
+        <div *ngFor="let animal of useranimal">
+                <p *ngIf="animal.id == id" class="class" id="myanimal">
+                    <span>ID: {{animal.id}}</span>
+                    <br>
+                    <span>Nome: {{animal.name}}</span>
+                </p>
+        </div>
+</ng-template>
+

@@ -1,0 +1,4 @@
+#myanimal{
+    display: flex;
+    flex-direction: column
+}

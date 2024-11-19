@@ -1,12 +1,13 @@
-
-
-<app-first-component></app-first-component>
 <h1>Hello Angular!</h1>
-<app-parent-data [name] = "userName" [userData] = "data"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-events></app-events>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<div class="routes">
+    <a class="button" routerLink="/list" routerLinkActive="buttonactive" ariaCurrentWhenActive="page">List render</a>
+    <a class="button" routerLink="" routerLinkActive="buttonactive" ariaCurrentWhenActive="page">First component</a>
+    <a class="button" routerLink="directives" routerLinkActive="buttonactive" ariaCurrentWhenActive="page">Directives</a>
+    <a class="button" routerLink="emitter" routerLinkActive="buttonactive"  ariaCurrentWhenActive="page">Emitter</a>
+    <a class="button" routerLink="events" routerLinkActive="buttonactive"  ariaCurrentWhenActive="page">Events</a>
+    <a class="button" routerLink="ifrender" routerLinkActive="buttonactive"  ariaCurrentWhenActive="page">If render</a>
+    <a class="button" routerLink="parentdata" routerLinkActive="buttonactive" ariaCurrentWhenActive="page">Parent data</a>
+    <a class="button" routerLink="pipe" routerLinkActive="buttonactive" ariaCurrentWhenActive="page">Pipe</a>
+    <a class="button" routerLink="twoway" routerLinkActive="buttonactive" ariaCurrentWhenActive="page">Two way binding</a>
+</div>
+<router-outlet></router-outlet>
